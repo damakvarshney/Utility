@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context=".screens.sublist.registerScreens.SimpleRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_arrow_registerScreen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="to_SimpleLogin"
+                android:layout_gravity="left"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                tools:ignore="RtlHardcoded,VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:gravity="right"
+                android:onClick="to_SimpleLogin"
+                android:textColor="@color/SilverGrey"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/register"
+            android:textColor="@color/SilverGrey"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_layout_bg"
+        android:padding="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_baseline_person_24"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="casual"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/SilverGrey"
+                    android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_baseline_email_24"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="casual"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/SilverGrey"
+                    android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_baseline_vpn_key_24"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="casual"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/SilverGrey"
+                    android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_pink_button"
+            android:fontFamily="casual"
+            android:text="@string/register"
+            android:onClick="to_Sample_Screen"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signin_otp_textView"
+            android:text="@string/signin_using_mobile_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:textColor="@color/Black"
+            android:visibility="visible"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

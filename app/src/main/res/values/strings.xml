@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Utility</string>
+    <string name="todo">TODO</string>
+    <string name="register">Register</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signin_using_mobile_otp">SignIn using Mobile OTP</string>
+    <string name="login">LogIn</string>
+</resources>
